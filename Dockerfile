@@ -24,7 +24,7 @@ run sed -i "/deb-src/d" /etc/apt/sources.list && \
   llvm \
   libpcre3-dev \
   build-essential \
-  curl libatomic-ops-dev && \
+  curl libatomic-ops-dev pkg-config && \
   rm -rf /var/lib/apt/lists/*
 
 run curl -sSL "https://github.com/crystal-lang/crystal/releases/download/0.21.1/crystal-0.21.1-1-linux-x86_64.tar.gz" | tar xfz - -C /opt && \
