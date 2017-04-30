@@ -37,7 +37,7 @@ run ./autogen.sh && ./configure --prefix=/usr && \
 
 run git clone https://github.com/crystal-lang/crystal.git /opt/crystal
 workdir /opt/crystal
-run git checkout 0.21.1 && make && \
+run git checkout 0.22.0 && make && \
   rm /usr/local/bin/crystal && ln -s /opt/crystal/bin/crystal /usr/local/bin/crystal
 
 run git clone --depth=1 https://github.com/crystal-lang/shards.git /usr/src/shards
